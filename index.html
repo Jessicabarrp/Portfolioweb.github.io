@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jessica</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Currículum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/I.jpeg" alt="Imagen de perfil" >
+            </div>
+            <h1>JESSICA BARRIGA</h1>
+            <h2>Estudiante de programación de software <span id="emoji" class="emoji">👨‍💻</span> Desarrollo web</h2>
+            <div class="redes">
+                <a href="https://github.com/Jessicabarrp"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/573005735484"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/jessica-barriga-prieto-6a69342b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí.</h2>
+            <p><span>Hola, soy Jessica Barriga.</span> 
+
+                Como estudiante apasionada por la tecnología y el desarrollo de software, mi enfoque se ha centrado en adquirir habilidades sólidas en el desarrollo Front-end, especialmente en tecnologías como HTML, CSS y JavaScript. Además, he explorado lenguajes de programación Back-end como PHP, Python y Java para obtener una comprensión integral del desarrollo de software en todos los niveles.
+                
+                <p>Mi compromiso con la innovación y la excelencia técnica me impulsa a buscar constantemente oportunidades para expandir mi conocimiento y mejorar mis habilidades. Durante mi trayectoria académica, he participado en proyectos significativos que han fortalecido mi comprensión de los principios fundamentales del desarrollo de software. Mi capacidad para integrar la creatividad con la funcionalidad se ha destacado en diversas ocasiones, y estoy comprometida por la oportunidad de aplicar estas habilidades en un entorno tanto laboral como profesional.
+                
+                <p>Estoy buscando una experiencia de prácticas que me permita aprender de profesionales establecidos, contribuir con ideas sólidas y creativas, y obtener una comprensión práctica de cómo se aplica el desarrollo de software en un entorno empresarial. Estoy segura de que mi pasión por la tecnología y mi deseo de aprender y crecer me convertirán en una valiosa integrante de su equipo de prácticas</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales.</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombre:</strong>
+                            Jessica Maria Barriga Prieto
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            3005735484 - 3115973107
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            Jessicabarriga055@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ciudad:</strong>
+                            Bogotá
+                        </li>
+                        <li>
+                            <strong>Ocupación:</strong>
+                            <span> Estudiante técnica profesional en programación de software</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses.</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes" id="interes1">
+                            <i class="fa-solid fa-desktop"></i>
+                            <span>Frontend</span>
+                            <img src="img/IA2.gif" alt="Imagen 1">
+                        </div>
+                        <div class="interes" id="interes2">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Diseño - dibujo</span>
+                            <img src="img/Drawing.gif" alt="Diseño - dibujo">
+                        </div>
+                        <div class="interes" id="interes3">
+                            <i class="fa-solid fa-baseball"></i>
+                            <span>Deporte</span>
+                            <img src="img/sports.gif" alt="Deporte">
+                        </div>
+                        <div class="interes" id="interes4">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Libros</span>
+                            <div class="imagen-libros">
+                                <img src="img/books.gif" alt="Libros">
+                            </div>
+                        </div>                        
+                        <div class="interes" id="interes5">
+                            <i class="fa-solid fa-language"></i>
+                            <span>Idiomas</span>
+                            <div class="imagen-idiomas">
+                                <img src="img/Languages.gif" alt="Idiomas">
+                            </div>
+                        </div>
+                        <div class="interes" id="interes6">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotos</span>
+                            <div class="imagen-fotos">
+                                <img src="img/Photos.gif" alt="Fotos">
+                            </div>
+                        </div>
+                        <div class="interes" id="interes7">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                            <div class="imagen-musica">
+                                <img src="img/Guitar.gif" alt="Música">
+                            </div>
+                        </div>                        
+                        <div class="interes" id="interes8">
+                            <i class="fa-solid fa-truck-plane"></i>
+                            <span>Viajar</span>
+                            <div class="imagen-viajar">
+                                <img src="img/Nature.gif" alt="Viajar">
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1oiivVQeja9XrbFXYGne0LpnWrBa79njt/view?usp=sharing" download>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills.</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills.</h3>
+                    <div class="skill">
+
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Microsoft Office</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills.</h3>
+                    <div class="skill">
+                        <span>Inglés</span>
+                        <p>Nivel:intermedio</p>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicacion efectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad e innovación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Aprendizaje continuo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resiliencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum.</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación.</h3>
+                    <div class="item izq">
+                        <h4>Técnica profesional en programación de software</h4>
+                        <span class="casa">Fundación de educación superior Nueva América</span>
+                        <span class="fecha">2023 - Actualmente</span>
+                        <h4>Bachiller Académico</h4>
+                        <span class="casa">Colegio San Rafael I.E.D</span>
+                        <span class="fecha">2016-2021</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Cursos.</h3>
+                    <div class="item izq">
+                        <h4>Bilingües - Centro Colombiano de Lenguas Modernas</h4>
+                        <span class="casa">Programa de inglés</span>
+                        <span class="fecha">2023 - Actualmente</span>
+                        <h4>AWS Academy Cloud foundations</h4>
+                        <span class="casa">AWS Academy</span>
+                        <span class="fecha">Marzo 2024 - Actualmente</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cisco networking academy</h4>
+                        <span class="casa">Fundamentos de Python 1</span>
+                        <span class="fecha">Marzo 2024 - Actualmente</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Certificados.</h3>
+                    <div class="item der">
+                        <h4>Cisco networking academy</h4>
+                        <span class="casa">Dispositivos de red y configuración inicial</span>
+                        <span class="fecha">Febrero 2024</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Colombian System</h4>
+                        <span class="casa">Programación de equipos de computo con énfasis en inglés</span>
+                        <span class="fecha">Julio 2018</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Aismer internacional</h4>
+                        <span class="casa">Inglés avanzado</span>
+                        <span class="fecha">Marzo 2015<span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio.</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/portafolio.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Web personal</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/blogp.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Blog</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Tiendaonline.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Tienda online</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Agenda.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Agenda</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ClonSpoti.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Clon spotify</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Wom_2.jpeg" width="500" height="350">
+                    <div class="overlay">
+                        <h3>Descubre una serie de proyectos adicionales que he realizado🎇</h3>
+                        <li><a href="https://github.com/Jessicabarrp" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <h2>Contacto <span id="confeti-container"></span></h2>
+                    <p>Estimado/a usuario </p>
+                    <p>Gracias por visitar mi portafolio. Me complace ofrecerle la posibilidad de ponerse en contacto conmigo.</p>
+                    <p>Por favor, no dude en utilizar cualquiera de los siguientes medios para comunicarse:</p>
+                    <ul>
+                        <li><a href="mailto:Jessicabarriga055@gmail.com"><i class="fas fa-envelope fa-2x"></i></a></li>                        <li><a href="tel:3005735484"><i class="fas fa-phone fa-2x"></i></a></li>
+                        <li><a href="https://wa.me/573005735484" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jessica-barriga-prieto-6a69342b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        <li><a href="https://github.com/Jessicabarrp" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Jessica Barriga. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
